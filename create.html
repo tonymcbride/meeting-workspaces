@@ -1,0 +1,620 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
+
+<title> Create new meeting </title>
+
+<!-- Typekit fonts -->
+<script type="text/javascript" src="//use.typekit.net/jdo7twz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link rel="stylesheet" type="text/css" href="Style Library/ResponsiveServer/ResponsiveContent/css/styles.css">
+
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/jquery-1.11.1.min.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/modernizr.dev.js"></script>
+    
+</head>
+    
+<!-- If no right panel give body class "no-panel" -->
+<body class="no-panel">
+
+    
+<!-- Header -->
+<header class="global">
+
+	<div id="ms-designer-ribbon"> </div> <!-- sharepoint shit -->
+
+	<!-- Actual Header -->
+	<section class="header-content">
+        
+
+        <!-- Logo inner link to go to homepage of respective area | ie, My Northumbria or My Learning -->
+        <h1 class="logo"> <a href="#" title="My Learning"> </a> </h1>
+
+        <!-- Mobile Logo -->
+        <div class="mobile-logo"> </div>
+    
+        <a id="mobile-menu-toggle" class="notify-btn"> 
+            
+            <div>
+                <span class="row1"></span>
+                <span class="row2"></span>
+                <span class="row3"></span>
+            </div>
+            
+        </a>
+        
+
+		<!-- Notifications + Account + Menu -->
+		<section class="right-content">
+
+			<!-- Notifications -->
+
+			<div class="notifications-wrap">
+
+				<!-- Alerts -->
+				<div class="hdr-notifications notify-btn"> 
+
+					<a id="hdr-notifications-show" title="My Notifications"> </a>
+
+					<span class="number"> 2 </span>
+
+					<!-- Flyout || Display on click -->
+
+					<section id="notification-flyout" class="header-flyout">
+
+						<div class="header"> My Notifications <span class="number"> 2 </span> </div>
+
+						<!-- Notification -->
+						<a class="notification-row" href="#">
+
+							<img class="notifcation-icon" alt="depends on image" src="Style Library/ResponsiveServer/ResponsiveContent/img/icons/warning-amber-20x20.png"/> 
+							<p> Your assignment, “Assignment name two”, is due in 3 days! </p>
+
+						</a>
+
+						<!-- Notification -->
+						<a class="notification-row" href="#">
+
+							<img class="notifcation-icon" alt="depends on image" src="Style Library/ResponsiveServer/ResponsiveContent/img/icons/module-grey-20x20.png"/> 
+							<p> Your marks for ‘Assignment Name One’ are now available to view in My Grades. </p>
+
+						</a>
+
+						<!-- Notification -->
+						<a class="notification-row" href="#">
+
+							<img class="notifcation-icon" alt="depends on image" src="Style Library/ResponsiveServer/ResponsiveContent/img/icons/file-grey-20x20.png"/>
+							<p> Hollie Clark shared a file with you in MC104: Module Five </p>
+
+						</a>
+
+                        <div class="footer"> <a title="View all notifications" href="#"> View all Notifications &raquo; </a> </div>
+
+					</section>
+
+				</div>
+
+
+				<!-- Email || Show only if discussion if not showing -->
+				<div class="hdr-mail notify-btn"> 
+
+					<a title="My Email" href="https://sso.northumbria.ac.uk/"> </a>
+
+				</div>
+				
+
+
+				<!-- OneDrive -->
+				<div class="hdr-files notify-btn"> 
+
+					<a title="My Files"> </a>
+
+				</div>
+
+
+				<!-- Calendar -->
+				<div class="hdr-cal notify-btn"> 
+
+					<a title="My Calendar"> </a>
+
+				</div>
+                    
+
+			</div>
+
+
+			<!-- User Account -->
+			<div class="user-wrap">
+
+				<a id="hdr-user-options"> 
+
+					<img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/dan.png" alt="Your Avatar"/>
+
+					<span> D Smith </span>
+
+				</a>
+
+				<!-- Flyout || Display on click -->
+				<section id="user-flyout" class="header-flyout">
+
+					<ul>
+						<li> <a href="#"> My Email </a> </li>
+						<li> <a href="#"> My Profile </a> </li>
+						<li> <a href="#"> Help &amp; Support </a> </li>
+					</ul>
+
+				</section>
+
+			</div>
+
+			<!-- Menu Button -->
+			<div class="search-btn-wrap">
+
+				<a id="hdr-search-btn" title="Open Menu"> </a>
+                
+                <div> 
+    
+                    <input type="text" class="ms-srch-sb-searchLink"  placeholder="Search...">
+                    <a class="search-btn">Search!</a>
+                    
+                </div>
+
+			</div>
+                
+
+		</section>
+
+	</section>
+
+<!--// header -->
+</header>
+        
+    
+<!-- Secondary header | Tabbed Navigation -->
+<section class="sub-header-global">
+    
+    
+    <!-- Mobile | Search and Menu Anchor Link -->
+    <div class="mobile-only">
+        
+        <div class="mobile-search-wrap"> 
+    
+            <input type="text" class="ms-srch-sb-searchLink"  placeholder="Search...">
+                    
+        </div>
+        
+        <a class="menu-anchor" href="#sidebar" title="Jump to menu"> Menu </a>
+        
+    </div>
+    
+    <!-- Desktop + Tablet Navigation -->
+    <nav>
+    
+    <a href="#" id="my-northumbria-link"> My Northumbria </a>
+    <a href="#" id="my-campus-link"> My Campus </a>
+    <a href="#" id="my-learning-link" class="active"> My Learning </a>
+    <a href="#" id="student-support-link"> Student Support </a>
+    <a href="#" id="it-support-link"> IT Support </a>
+    <a href="#" id="general-info-link"> General Information </a>
+    
+        <!-- More link - triggers 'explore-menu below' -->
+        <a class="more-link" href="#"> 
+            
+            More  
+        
+            <div id="more-icon"> 
+                        
+                <aside class="row row-1"></aside>
+                <aside class="row row-2"></aside>
+                <aside class="row row-3"></aside>
+
+            </div> 
+        
+        </a>
+    
+    </nav>
+
+    <!-- Menu Mega Drop Down - with desktop + tablet nav  -->
+	<section id="explore-menu">
+
+		<ul>
+            
+            <li>  <a href="#"> Student Support </a> </li>
+               
+            <li>  <a href="#"> IT Support </a> </li>
+
+			<li>  <a href="#"> Departmental Information </a>  </li>
+            
+            <li>  <a href="#"> Student Email </a> </li>
+            
+            <li>  <a title="northumbria University Website" href="https://www.northumbria.ac.uk/"> Northumbria University Website </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Campus Services </a>   </li>
+
+		</ul>
+
+		<ul>
+            
+
+			<li>  <a title="northumbria University Website" href="#"> IT Services </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Jobs Online </a>  </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Online Shop </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> New Students </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Northumbria Graphics </a>   </li>
+            
+            <li>  <a title="northumbria University Website" href="#"> Sports Central </a>  </li>
+
+		</ul>
+
+		<ul>
+            
+
+			<li>  <a title="northumbria University Website" href="#"> Students Union </a>  </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Module Search </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Timetabling </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> University Library </a>   </li>
+
+			<li>  <a title="northumbria University Website" href="#"> Online Payments </a>  </li>
+            
+            <li>  <a title="northumbria University Website" href="#"> Can't see what your looking for? </a>  </li>
+
+		</ul>
+
+	</section>
+    
+<!--// secondary header -->
+</section>
+
+
+<!-- CONTENT PANEL || PAGE CONTENT IN HERE -->
+<section class="content-panel-wrap meetings">
+    
+
+    <!-- Page Header -->
+	<header class="page-title"> 
+        
+        <!-- Breadcrumbs || Don't show on top level-->
+        <!-- <article class="breadcrumbs" id="breadcrumbs"> 
+            
+            <a href="#"> My Meetings </a>
+            
+            <span data-bind="html: currentBreadcrumb()"> &gt; 
+                
+                <a href="https://livenorthumbriaac.sharepoint.com/sites/vle/LA0893" id="mfa0"> LA2345 Module One </a> &gt; 
+            
+            </span>
+	
+        </article> -->
+
+
+		<h1> 
+            My Meetings
+        </h1> 
+
+		<div class="clear"></div>
+        
+    </header>
+
+    <div id="addContentWizard">
+        
+        <div id="addContentStages">
+            
+            <div id="addRichText" class="stage block">
+
+                <section class="inner-content">
+
+                    <label> Meeting Title <span class="required">*</span> </label> 
+                    <input type="text" placeholder="What is this meeting called?">  <!-- give input class 'not-valid' if fails validation, plus show next 'validation-fail' element' -->
+
+                    <!-- failed validation message for title --> 
+                    <!-- <aside class="validation-fail"> Hang on, you need to give this meeting a title! Insert one now to continue </aside> -->
+
+                    <label> Content <span class="required">*</span> </label> 
+
+                    <!-- WYSIWYG -->
+                    <textarea placeholder="What is this meeting about?"></textarea>
+
+                    <!-- failed validation message || check wysiwyg for content on NOTE only --> 
+                    <!-- <aside class="validation-fail"> We need some content for this meeting. </aside> -->
+
+                </section>
+   
+            </div><!-- /#RichText -->
+            
+            <div id="addMembers" class="stage block">
+                
+                <section class="inner-content">
+                
+                    <header>Attendees</header>
+
+                    <div id="selectedAttendees">
+                        <label>Selected attendees</label>
+                        <ul>
+                            <li class="person">
+                                <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                                <div class="name"><span>Laura Millar</span><span>IT services</span>
+                                </div>
+                            </li>
+                            <li class="person">
+                                <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                                <div class="name"><span>Erika Silvestri</span><span>Human Resources</span>
+                                </div>
+                            </li>
+                            <li class="person minute-taker">
+                                <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                                <div class="name"><span>Steven Larson</span><span>IT services</span>
+                                </div>
+                            </li>
+                            <li class="person">
+                                <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                                <div class="name"><span>Jessica West</span><span>IT services</span>
+                                </div>
+                            </li>
+                            <li class="person">
+                                <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                                <div class="name"><span>Aaron Jones</span><span>IT services</span>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div id="searchMembers">
+                        <span class="icon-magnifying-glass"></span>
+                        <input type="text" placeholder="Search members to invite">
+                        <input id="btnAddMembers" class="btn" type="Button" value="Add">
+                    </div>
+                    
+                    <div id="minute-taker">
+                        <label>Are minutes needed for this meeting?</label>
+                            <input type="checkbox" class="js-switch" data-switchery="true" style="display: none;"><span class="switchery" style="box-shadow: rgb(86, 156, 190) 0px 0px 0px 16px inset; border-color: rgb(86, 156, 190); transition: border 0.4s, box-shadow 0.4s, background-color 1.2s; -webkit-transition: border 0.4s, box-shadow 0.4s, background-color 1.2s; background-color: rgb(86, 156, 190);"><small style="left: 20px; transition: left 0.2s; -webkit-transition: left 0.2s;"></small></span>  
+				        <span class="switch-state">Yes I require minutes for this meeting</span>
+                        <div id="select-member">
+                            <span>Minute taker:</span> 
+                            <select class="hasCustomSelect"> 
+                                <option>Laura Millar</option>  
+                                <option>Erika Silvestri</option> 
+                                <option>Steven Larson</option> 
+                            </select>
+                        </div>
+
+                    </div><!-- /#minute-taker -->
+                    
+                </section>
+                
+            </div><!-- /#addMembers -->
+            
+            <div id="date-time" class="stage block">
+                
+                <section class="inner-content">
+                    
+                    <header>Date &amp; time</header>
+
+                    <div id="date">
+                        <span><span class="icon-calendar"></span>Date<div>*</div></span> 
+                        <input data-bind="" class="hasDatepicker">
+                    </div>
+
+                    <div id="length">
+                        <span><span class="icon-clock"></span>Meeting length<div>*</div></span> 
+                        <input data-bind="" class="hasDatepicker">
+                    </div>
+
+                    <div id="available">
+                        <span>Select from available times<div>*</div></span> 
+                        <select class="hasCustomSelect"> 
+                            <option>9:30 - 11:00</option>  
+                            <option>10:00 - 11:30</option> 
+                        </select>
+                    </div>
+                    
+                </section>
+                
+            </div><!-- /#date-time -->
+            
+        </div><!-- /#addContentStages -->
+        
+        <section class="small-column meeting-summary block cf">
+        
+            <header>Your meeting</header>
+
+            <div class="inner-content">
+
+                <p><span>Title</span>Annual Leave</p>
+                
+                <p><span>Overview</span>Curabitur quam mauris, rhoncus id dui vitae, tempus auctor velit. Morbi hendrerit sit amet lacus at eleifend. Pellentesque massa metus, lobortis eu lectus sed, elementum luctus magna. Phasellus sed metus  dignissim, posuere urna id, aliquam mauris</p>
+                
+                <p><span>Attendees</span></p>
+                
+                <ul class="attendees">
+                    <li class="person">
+                        <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                        <div class="name"><span>Laura Millar</span></div>
+                    </li>
+                    <li class="person">
+                        <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                        <div class="name"><span>Erika Silvestri</span></div>
+                    </li>
+                    <li class="person">
+                        <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                        <div class="name"><span>Steven Larson</span></div>
+                    </li>
+                    <li class="person">
+                        <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                        <div class="name"><span>Jessica West</span></div>
+                    </li>
+                    <li class="person minute-taker">
+                        <span class="avatar"><img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/laura.png" class="avatar" alt="Laura Millar"> </span>
+                        <div class="name"><span>Aaron Jones</span></div>
+                    </li>
+                </ul>
+                
+            </div>
+            
+            <div id="confirm" class="clear">
+                <a id="cancel" href="#"> « Cancel</a>
+                <input type="submit" id="send-request-btn" class="btn right" value="Create meeting">
+            </div>
+                
+        </section>
+    
+    </div><!-- /#addContentWizard -->
+    
+</section>    
+    
+<!-- Mobile Menu -->
+<section class="left-panel">
+    
+    <div class="left-panel-content">
+    
+    <!-- this is new -->
+    <header>
+        
+           <a id="close-menu-burger"> 
+            
+            <div>
+                <span class="row1"></span>
+                <span class="row2"></span>
+                <span class="row3"></span>
+            </div>
+            
+        </a>
+        
+        <a id="close-mobile-menu"> Close Menu </a>
+        
+    </header>
+        
+    
+    <article class="sub-head user"> <img src="Style Library/ResponsiveServer/ResponsiveContent/img/users/dan.png"/> Daniel Smith </article> 
+    
+    <ul>
+        <li> <a href="#"> Student Email </a> </li>
+        <li> <a href="#"> My Files </a> </li>
+        <li> <a href="#"> My Calendar </a> </li>
+        <li> <a href="#"> My Profile </a> </li>
+        <li> <a href="#"> Sign Out </a> </li>
+    </ul>
+        
+        
+    <article class="sub-head"> Popular </article> 
+    
+    <ul>
+        <li> <a href="#"> My Northumbria </a> </li>
+        <li> <a href="#"> My Campus </a> </li>
+        <li class="active"> <a href="#"> My Learning </a> </li>
+        <li> <a href="#"> Student Support </a> </li>
+        <li> <a href="#"> IT Support </a> </li>
+        <li> <a href="#"> General Information </a> </li>
+    </ul>
+        
+    
+    <article class="sub-head user"> More </article> 
+    
+    <ul>
+        <li> <a href="#"> Northumbria University Website </a> </li>
+        <li> <a href="#"> Campus Services </a> </li>
+        <li> <a href="#"> IT Services </a> </li>
+        <li> <a href="#"> Jobs Online </a> </li>
+        <li> <a href="#"> Online Shop </a> </li>
+        <li> <a href="#"> New Students </a> </li>
+        <li> <a href="#"> Northumbria Graphics </a> </li>
+        <li> <a href="#"> Sports Central </a> </li>
+        <li> <a href="#"> Students Union </a> </li>
+        <li> <a href="#"> Module Search </a> </li> 
+        <li> <a href="#"> Timetabling </a> </li>
+        <li> <a href="#"> University Library </a> </li> 
+        <li> <a href="#"> Online Payments </a> </li>
+        <li> <a href="#"> Can't see what your looking for? </a> </li>
+    </ul>
+        
+        
+    </div>
+    
+<!--// mobile menu -->
+</section>
+    
+    
+<!-- Realtime Notifications -->
+<div id="container" class="ui-notify" style="display:none;">
+    
+    <div class="ui-notify-message ui-notify-message-style" id="mf215">
+    
+    <a class="ui-notify-close ui-notify-cross" href="#" id="mfa105">x</a>
+        
+    <div style="float:left;margin:0 10px 0 0" id="mf649"> <img src="https://portal.northumbria.ac.uk/clx/userimages/vdmr5.jpg" alt="Russell Kerr" id="mf650"> </div>
+    <!--<h1 id="mf651">Russell Kerr</h1>-->
+    <p id="mf652">Hi Daniel, this is an example of a real time notification when you receive an IM :)<br id="mf216"></p>
+    
+    </div>
+    
+</div>
+    
+<!-- Plugins -->
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/jquery.nanoscroller.min.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/unslider.min.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/touchSwipe.min.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/customSelect.min.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/iCheck.min.js"></script>
+    
+<!-- Polyfills -->
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/calc.min.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/placeholdr.min.js"></script>
+    
+<!-- My Shit -->
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/panels.js"></script>
+<script src="Style Library/ResponsiveServer/ResponsiveContent/js/header.js"></script>
+    
+<script type="text/javascript">
+  $(document).ready(function($) {
+        
+    $(".nano").nanoScroller();
+
+  });
+    
+    /* --- Sticky panel --- */
+
+    stickyTop = $('.meeting-summary').offset().top;
+    offsetLeft = $('.meeting-summary').offset().left -30; // account for margin
+
+    $(window).resize(function(){
+
+        stickyTop = $('.meeting-summary').offset().top;
+        offsetLeft = $('.meeting-summary').offset().left; // account for margin
+
+    });
+
+    $(window).scroll(function(){ // scroll stuff   
+
+        var windowTop = $(window).scrollTop();
+
+        if( $(window).width() > 699 ){ // if not mobile
+
+            if (stickyTop < windowTop + 160 ) { // -160 for positioning
+              $('.meeting-summary').css({ position: 'fixed', top: '160px', width: 'calc(30% - 30px)', margin: '0 0 0 30px', left:offsetLeft}); 
+            }
+            else {
+              $('.meeting-summary').css({position: 'static', width: '30%', margin: '0'});
+            }
+        }
+
+    });
+    
+</script>
+
+    
+</body>
+</html>
